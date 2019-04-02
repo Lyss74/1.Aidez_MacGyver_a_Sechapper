@@ -38,6 +38,7 @@ class Player:
             Y = zone.top
         elif Y + HEIGHT > zone.bottom:
             Y = zone.bottom - SPRITE_SIZE_HEIGHT
+
         self.pos = (X, Y)                                                                     # Init the player position
         self.rect.topleft = (X, Y)                                                              # Init the rect position
         return X, Y                                                                  # Return constants X and Y position
@@ -55,6 +56,7 @@ class Player:
 
         elif mac == finish:                                                          # Define the victory or defeat game
             print('FINISH', FINISH_LIST)
+            
         return item_1, item_2, item_3
 
     def syringe_assembly(self, mac, scale, item_1, item_2, item_3, display):
